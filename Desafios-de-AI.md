@@ -2,6 +2,6 @@
 
 Aqui serão entregues os desafios propostos ao final de cada aula, com os link para o colab.
 Relembrando que todas as atividades foram feitas em conjunto com os membros da equipes descritos no README.md
-## DESAFIO - AULA 1°: Representação do Conhecimento
+## DESAFIO - AULA 1°: 
 ### Link para o Notebook da 1° Aula:
 - 📊 [Panorama da Inteligência Artificial](https://colab.research.google.com/drive/1GbtsHvlf3nOiHVnoOESS4ExPFWtd5OxQ?authuser=1#scrollTo=01f7141c)

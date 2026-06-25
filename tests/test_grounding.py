@@ -1,7 +1,7 @@
 
 """
 PROJETO RAGMED - Testes de Grounding (Ancoragem)
-Papel: Tester e Validador (Cristóvão)
+Papel: Tester e Validador (Cristovam)
 
 Este script utiliza o pytest para validar se as respostas do RAGMed
 estão devidamente ancoradas nos documentos (sem alucinações).

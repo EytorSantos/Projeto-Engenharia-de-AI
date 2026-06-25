@@ -1,7 +1,7 @@
 
 """
 PROJETO RAGMED - Framework de Avaliação RAGAS
-Papel: Tester e Validador (Cristóvão)
+Papel: Tester e Validador (Cristovam)
 
 Este script automatiza a avaliação da qualidade das respostas do RAGMed utilizando o framework RAGAS.
 Métricas avaliadas:

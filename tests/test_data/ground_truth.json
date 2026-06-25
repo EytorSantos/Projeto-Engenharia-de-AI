@@ -1,0 +1,27 @@
+[
+  {
+    "question": "Quais são as contraindicações da Dipirona para grávidas?",
+    "ground_truth": "A dipirona monoidratada é contraindicada durante a gravidez e amamentação.",
+    "context": "## Contraindicações\nA dipirona monoidratada não deve ser utilizada caso você tenha: [...] - Gravidez e amamentação."
+  },
+  {
+    "question": "Qual a posologia de paracetamol para adultos?",
+    "ground_truth": "Para adultos e crianças acima de 12 anos, a dose recomendada é de 1 a 2 comprimidos de 500mg a cada 4 ou 6 horas, não excedendo 8 comprimidos (4g) em 24 horas.",
+    "context": "## Como usar?\n- Adultos e crianças acima de 12 anos: 1 a 2 comprimidos de 500mg a cada 4 ou 6 horas. Não exceder 8 comprimidos (4g) em um período de 24 horas."
+  },
+  {
+    "question": "Quanto tempo leva para a Dipirona começar a fazer efeito?",
+    "ground_truth": "O tempo médio de início de ação da dipirona é de 30 a 60 minutos após a administração.",
+    "context": "## Como funciona?\nA dipirona monoidratada é um medicamento à base de dipirona, utilizado no tratamento da dor e febre. O tempo médio de início de ação é de 30 a 60 minutos após a administração."
+  },
+  {
+    "question": "O paracetamol pode ser usado por quem tem doença hepática grave?",
+    "ground_truth": "Não, o paracetamol é contraindicado em pacientes com doença hepática grave ou insuficiência renal grave.",
+    "context": "## Contraindicações\nO paracetamol não deve ser administrado a pacientes com hipersensibilidade ao paracetamol ou a qualquer outro componente de sua fórmula. Também é contraindicado em pacientes com doença hepática grave ou insuficiência renal grave."
+  },
+  {
+    "question": "Quais são as reações adversas comuns da Dipirona no sistema imunológico?",
+    "ground_truth": "As reações adversas da dipirona no sistema imunológico incluem choque anafilático e reações anafiláticas/anafilactoides.",
+    "context": "## Reações Adversas e Efeitos Colaterais\n- Distúrbios do sistema imunológico: Choque anafilático, reações anafiláticas/anafilactoides."
+  }
+]

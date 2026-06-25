@@ -1,0 +1,28 @@
+{
+  "test_cases": [
+    {
+      "id": 1,
+      "medication": "Dipirona",
+      "question": "Para que serve a dipirona?",
+      "expected_keywords": ["analgésico", "dor", "antitérmico", "febre"]
+    },
+    {
+      "id": 2,
+      "medication": "Paracetamol",
+      "question": "Qual o início de ação do paracetamol?",
+      "expected_keywords": ["15 a 30 minutos"]
+    },
+    {
+      "id": 3,
+      "medication": "Dipirona",
+      "question": "Posso tomar dipirona com ciclosporina?",
+      "expected_keywords": ["reduzir", "níveis séricos", "ciclosporina"]
+    },
+    {
+      "id": 4,
+      "medication": "Geral",
+      "question": "Quem descobriu a dipirona?",
+      "expected_keywords": ["não possui essa informação", "não sei", "bula"]
+    }
+  ]
+}

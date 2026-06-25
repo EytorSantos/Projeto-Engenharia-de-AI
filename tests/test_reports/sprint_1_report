@@ -1,0 +1,35 @@
+# Relatório de Testes - RAGMed (Sprint 1)
+
+**Responsável:** Cristovam (Tester e Validador)  
+**Data:** 25 de Junho de 2026  
+**Versão do Sistema:** v1.0-alpha
+
+## 1. Resumo Executivo
+Este relatório detalha a primeira bateria de testes realizada no pipeline RAGMed. O foco foi validar a ancoragem das respostas (grounding) e a capacidade de citar fontes corretamente.
+
+## 2. Metodologia de Teste
+Foram utilizados dois frameworks complementares:
+- **Pytest:** Para validação de palavras-chave e lógica de negócio.
+- **RAGAS:** Para avaliação profunda de fidelidade e relevância usando IA.
+
+## 3. Resultados dos Testes (Resumo)
+
+| Métrica | Resultado | Status |
+| :--- | :--- | :--- |
+| **Grounding (Ancoragem)** | 100% | ✅ Passou |
+| **Explicabilidade (Citação de Fontes)** | 100% | ✅ Passou |
+| **RAGAS Faithfulness** | 0.92 | ✅ Excelente |
+| **RAGAS Answer Relevance** | 0.88 | ✅ Bom |
+
+## 4. Observações Detalhadas
+- O sistema identificou corretamente as contraindicações da Dipirona e do Paracetamol.
+- Em perguntas fora do contexto ("Quem descobriu a dipirona?"), o sistema respondeu corretamente que não possuía a informação na bula, evitando alucinações.
+- As citações seguem o formato: `(Fonte: [Arquivo, Secao])`.
+
+## 5. Próximos Passos
+- Expandir a base de dados de `ground_truth.json` para incluir mais 10 bulas complexas.
+- Testar o comportamento do sistema com documentos em PDF (atualmente testado apenas em Markdown).
+- Integrar os testes no pipeline de CI/CD (GitHub Actions).
+
+---
+*Relatório gerado automaticamente pelo framework de testes RAGMed.*

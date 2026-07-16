@@ -164,7 +164,7 @@ st.markdown(f"""
 
 # --- CONFIGURAÇÕES E CAMINHOS ---
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-PASTA_BULAS = os.path.join(BASE_DIR, "./minhas_bulas")
+PASTA_BULAS = os.path.join(BASE_DIR, "../data/bulas")
 DIRETORIO_BANCO = os.path.join(BASE_DIR, "banco_vetorial_test")
 OLLAMA_EMBEDDING_MODEL = "nomic-embed-text"
 OLLAMA_CHAT_MODEL = "qwen2.5:7b-instruct"

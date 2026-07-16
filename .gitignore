@@ -45,3 +45,4 @@ dist/
 .env
 *.local
 credentials.json
+banco_vetorial_test/

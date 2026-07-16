@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAssist RAG - Triagem Clínica</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="sidebar-title">🩺 MedAssist</h1>
+            </div>
+
+            <!-- Theme Toggle -->
+            <button id="themeToggle" class="theme-btn">🌙 Modo Escuro</button>
+
+            <div class="divider"></div>
+
+            <!-- Status -->
+            <div class="status-section">
+                <div id="ollamaStatus" class="status-badge status-loading">
+                    ⏳ Verificando...
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Acervo -->
+            <div class="acervo-section">
+                <div class="metric">
+                    <span class="metric-label">Acervo Digital</span>
+                    <span id="acervoCount" class="metric-value">0 Bulas</span>
+                </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Gerenciar Base -->
+            <div class="manage-section">
+                <button id="toggleManage" class="manage-btn">📂 Gerenciar Base</button>
+                
+                <div id="managePanel" class="manage-panel hidden">
+                    <h3>Adicionar Nova Bula</h3>
+                    <input type="file" id="fileInput" accept=".md" class="file-input">
+                    <button id="uploadBtn" class="btn-secondary">Enviar</button>
+
+                    <div class="divider"></div>
+
+                    <h3>Remover Bula</h3>
+                    <select id="bulasSelect" class="select-input">
+                        <option value="">Selecione uma bula...</option>
+                    </select>
+                    <button id="deleteBtn" class="btn-danger">Confirmar Exclusão</button>
+
+                    <div class="divider"></div>
+
+                    <button id="resetBtn" class="btn-warning">🔄 Resetar Base de Dados</button>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <div class="header-content">
+                    <h1 class="page-title">Inteligência de Triagem Clínica</h1>
+                    <p class="page-subtitle">Analise sintomatologias com base em dados farmacêuticos locais.</p>
+                </div>
+            </header>
+
+            <!-- Input Section -->
+            <section class="input-section">
+                <div class="form-group">
+                    <label for="sintomasInput" class="form-label">Quadro Clínico do Paciente:</label>
+                    <textarea 
+                        id="sintomasInput" 
+                        class="textarea-input" 
+                        placeholder="Ex: Febre alta, dor no corpo..."
+                        rows="6"
+                    ></textarea>
+                </div>
+
+                <div class="button-group">
+                    <button id="analisarBtn" class="btn-primary">⚡ Analisar</button>
+                    <button id="limparBtn" class="btn-secondary">🔄 Limpar</button>
+                </div>
+            </section>
+
+            <!-- Loading State -->
+            <div id="loadingState" class="loading-state hidden">
+                <div class="spinner"></div>
+                <p id="loadingText">🎬 Processando...</p>
+                <div class="progress-steps">
+                    <div class="step" id="step1">
+                        <span class="step-icon">🔍</span>
+                        <span class="step-text">Buscando evidências nas bulas...</span>
+                    </div>
+                    <div class="step" id="step2">
+                        <span class="step-icon">🧠</span>
+                        <span class="step-text">Gerando parecer clínico...</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Section -->
+            <section id="resultsSection" class="results-section hidden">
+                <div class="results-container">
+                    <!-- Parecer Sugerido -->
+                    <div class="results-main">
+                        <h2 class="results-title">📋 Parecer Sugerido</h2>
+                        <div id="medicamentosContainer" class="medicamentos-container">
+                            <!-- Cards de medicamentos serão inseridos aqui -->
+                        </div>
+                        <button id="downloadBtn" class="btn-download">📥 Baixar Parecer</button>
+                    </div>
+
+                    <!-- Fontes -->
+                    <aside class="results-sidebar">
+                        <h2 class="results-title">🔍 Fontes</h2>
+                        <div id="fontesContainer" class="fontes-container">
+                            <!-- Fontes serão inseridas aqui -->
+                        </div>
+                    </aside>
+                </div>
+            </section>
+
+            <!-- Error Section -->
+            <div id="errorSection" class="error-section hidden">
+                <div class="error-box">
+                    <p id="errorMessage"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

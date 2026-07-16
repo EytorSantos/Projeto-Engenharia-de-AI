@@ -1,1 +1,0 @@
-# Bula Profissional - FUROSEMIDA

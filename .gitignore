@@ -1,0 +1,47 @@
+# ==========================================
+# Ambientes de Desenvolvimento (IDEs)
+# ==========================================
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# ==========================================
+# Arquivos de Sistema (Linux / Windows / macOS)
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# Python (Arquivos temporários e Ambientes Virtuais)
+# ==========================================
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.coverage
+
+# ==========================================
+# C / C++ (Compilados e Builds)
+# ==========================================
+*.o
+*.obj
+*.out
+*.exe
+build/
+dist/
+
+# ==========================================
+# Segurança e Configurações Locais (NUNCA suba isso!)
+# ==========================================
+.env
+*.local
+credentials.json
